@@ -1,16 +1,35 @@
+version: '3.8'
+
 services:
-  pluga-landing:
-    build: .
-    container_name: pluga-flow-site
+  landing-pluga:
+    image: ghcr.io/sxconnect/landing-pluga:latest
+    container_name: landing-pluga
     restart: unless-stopped
     ports:
       - "8085:80"
     environment:
       - VIRTUAL_HOST=pluga.xpanel.com.br
       - LETSENCRYPT_HOST=pluga.xpanel.com.br
+      - LETSENCRYPT_EMAIL=silvanoxavierpro@gmail.com
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=xpanel-net"
+      - "traefik.http.routers.pluga.rule=Host(`pluga.xpanel.com.br`)"
+      - "traefik.http.routers.pluga.entrypoints=web,websecure"
+      - "traefik.http.services.pluga.loadbalancer.server.port=80"
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+      labels:
+        - "traefik.enable=true"
+        - "traefik.docker.network=xpanel-net"
+        - "traefik.http.routers.pluga.rule=Host(`pluga.xpanel.com.br`)"
+        - "traefik.http.routers.pluga.entrypoints=web,websecure"
+        - "traefik.http.services.pluga.loadbalancer.server.port=80"
     networks:
-      - default
+      - xpanel-net
 
 networks:
-  default:
-    name: pluga-network
+  xpanel-net:
+    external: true
