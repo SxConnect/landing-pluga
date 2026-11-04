@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   landing-pluga:
     image: ghcr.io/sxconnect/landing-pluga:latest
@@ -17,16 +15,6 @@ services:
       - "traefik.http.routers.pluga.rule=Host(`pluga.xpanel.com.br`)"
       - "traefik.http.routers.pluga.entrypoints=web,websecure"
       - "traefik.http.services.pluga.loadbalancer.server.port=80"
-    deploy:
-      replicas: 1
-      restart_policy:
-        condition: on-failure
-      labels:
-        - "traefik.enable=true"
-        - "traefik.docker.network=portainer_default"
-        - "traefik.http.routers.pluga.rule=Host(`pluga.xpanel.com.br`)"
-        - "traefik.http.routers.pluga.entrypoints=web,websecure"
-        - "traefik.http.services.pluga.loadbalancer.server.port=80"
     networks:
       - portainer_default
 
