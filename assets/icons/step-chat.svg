@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
+  <defs>
+    <linearGradient id="step1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+  </defs>
+  <circle cx="28" cy="28" r="26" fill="url(#step1Grad)"/>
+  <!-- Balão de conversa principal -->
+  <path d="M18 20C18 16.6863 20.6863 14 24 14H32C35.3137 14 38 16.6863 38 20V26C38 29.3137 35.3137 32 32 32H25L20 37V32C18.8954 32 18 31.1046 18 30V20Z" fill="#ffffff"/>
+  <!-- Três pontinhos de conversa -->
+  <circle cx="24" cy="23" r="1.8" fill="#0284c7"/>
+  <circle cx="28" cy="23" r="1.8" fill="#0284c7"/>
+  <circle cx="32" cy="23" r="1.8" fill="#0284c7"/>
+</svg>

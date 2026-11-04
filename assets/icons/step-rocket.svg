@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
+  <defs>
+    <linearGradient id="step3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+  </defs>
+  <circle cx="28" cy="28" r="26" fill="url(#step3Grad)"/>
+  <!-- Foguete branco decolando -->
+  <path d="M37.5 15.5C37.5 15.5 32 15 26 21C22 25 21 29 21 29L27 35C27 35 31 34 35 30C41 24 40.5 18.5 40.5 18.5L37.5 15.5Z" fill="#ffffff"/>
+  <circle cx="32" cy="24" r="2.5" fill="#0284c7"/>
+  <!-- Asas do foguete -->
+  <path d="M22 28L17 28L18 33L23 33" fill="#38bdf8"/>
+  <path d="M28 34L28 39L33 38L33 33" fill="#38bdf8"/>
+  <!-- Fogo da propulsão -->
+  <path d="M19 37L15 41L21 40L19 44L24 39" fill="#00e676"/>
+</svg>

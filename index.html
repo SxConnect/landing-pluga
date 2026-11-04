@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pluga Flow | Sua loja. Seu domínio. Seus clientes.</title>
+  <meta name="description" content="Um canal próprio de vendas, com sua marca, seus pedidos e suas estratégias de fidelização. Conecte seu empreendimento no Pluga Flow.">
+  <meta name="keywords" content="pluga flow, cardapio digital, delivery proprio, clube de clientes, sxconnect, pedidos online, xpanel">
+  
+  <!-- Open Graph / Meta Compartilhamento -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pluga.xpanel.com.br">
+  <meta property="og:title" content="Pluga Flow | Sua loja. Seu domínio. Seus clientes.">
+  <meta property="og:description" content="Um canal próprio de vendas, com sua marca, seus pedidos e suas estratégias de fidelização.">
+  <meta property="og:image" content="assets/img/mockup-referencia.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/logo-pluga.png">
+  <link rel="apple-touch-icon" href="assets/img/logo-pluga.png">
+
+  <!-- Fontes Google Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pluga: {
+              neon: '#00e676',
+              neonHover: '#0df27c',
+              cyan: '#00d2ff',
+              dark: '#07152b',
+              darkSurface: '#0a1c38',
+              darkDeep: '#040d1a',
+              card: '#091a35'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            brand: ['Pacifico', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Estilos Customizados & Identidade Visual -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white text-slate-900 antialiased selection:bg-[#00e676] selection:text-slate-900">
+
+  <!-- ========================================================
+       HEADER / NAVBAR
+       ======================================================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#07152b]/95 backdrop-blur-md border-b border-cyan-500/15 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo Pluga Flow Oficial -->
+      <a href="#inicio" class="flex items-center gap-3 group" title="Pluga Flow">
+        <img src="assets/img/logo-pluga.png" alt="Logo Pluga" class="w-10 h-10 object-contain drop-shadow transition-transform duration-300 group-hover:scale-110">
+        <div class="flex flex-col">
+          <span class="text-2xl font-black tracking-tight text-white leading-none">Pluga</span>
+          <span class="text-[11px] font-extrabold tracking-widest text-[#00e676] uppercase leading-none mt-1">FLOW</span>
+        </div>
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+        <a href="#inicio" class="px-3.5 py-1.5 rounded-full text-xs uppercase tracking-wider font-extrabold bg-[#00e676] text-slate-950 transition-all shadow-sm">
+          Início
+        </a>
+
+        <!-- Dropdown Recursos -->
+        <div class="relative group">
+          <button class="px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white flex items-center gap-1 transition-colors">
+            Recursos
+            <svg class="w-4 h-4 text-slate-400 group-hover:text-[#00e676] transition-transform duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          
+          <div class="absolute left-0 mt-2 w-64 rounded-2xl bg-[#091a35] border border-cyan-500/20 shadow-2xl p-2 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-200">
+            <a href="#recursos" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/5 transition-colors text-slate-200 hover:text-[#00e676]">
+              <img src="assets/icons/store.svg" class="w-5 h-5" alt="Loja">
+              <span class="text-xs font-semibold">Loja Digital no seu Domínio</span>
+            </a>
+            <a href="#recursos" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/5 transition-colors text-slate-200 hover:text-[#00e676]">
+              <img src="assets/icons/clipboard-orders.svg" class="w-5 h-5" alt="Pedidos">
+              <span class="text-xs font-semibold">Gestão de Pedidos Online</span>
+            </a>
+            <a href="#recursos" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/5 transition-colors text-slate-200 hover:text-[#00e676]">
+              <img src="assets/icons/customer-club.svg" class="w-5 h-5" alt="Clube">
+              <span class="text-xs font-semibold">Clube de Clientes e Fidelidade</span>
+            </a>
+            <a href="#recursos" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/5 transition-colors text-slate-200 hover:text-[#00e676]">
+              <img src="assets/icons/delivery-bike.svg" class="w-5 h-5" alt="Entrega">
+              <span class="text-xs font-semibold">Entrega e Zonas de Raio</span>
+            </a>
+            <a href="#recursos" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/5 transition-colors text-slate-200 hover:text-[#00e676]">
+              <img src="assets/icons/payment-gateway.svg" class="w-5 h-5" alt="Pagamentos">
+              <span class="text-xs font-semibold">Pagamentos Integrados</span>
+            </a>
+            <a href="#recursos" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-white/5 transition-colors text-slate-200 hover:text-[#00e676]">
+              <img src="assets/icons/delivery-rider.svg" class="w-5 h-5" alt="Entregador">
+              <span class="text-xs font-semibold">Área do Entregador</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="#cases" class="px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white transition-colors">
+          Cases
+        </a>
+        <a href="#planos" class="px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white transition-colors">
+          Planos
+        </a>
+        <a href="#faq" class="px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white transition-colors">
+          FAQ
+        </a>
+        <a href="#contato" class="px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white transition-colors">
+          Contato
+        </a>
+      </nav>
+
+      <!-- CTA Botão Header -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="#contato" class="btn-open-contact btn-pluga-neon inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider">
+          <svg class="w-4 h-4 text-slate-950" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.82.49 3.53 1.34 5L2 22l5.17-1.31A9.957 9.957 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+          </svg>
+          Conheça o Pluga
+        </a>
+      </div>
+
+      <!-- Botão Hambúrguer Mobile -->
+      <button id="menuToggle" aria-label="Abrir Menu" class="md:hidden p-2 rounded-lg text-slate-300 hover:text-white focus:outline-none">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu Drawer Mobile -->
+  <div id="mobileOverlay" class="fixed inset-0 bg-black/70 z-50 hidden backdrop-blur-sm transition-opacity"></div>
+  <aside id="mobileMenu" class="fixed top-0 left-0 bottom-0 w-80 max-w-[85%] bg-[#07152b] z-50 p-6 flex flex-col justify-between -translate-x-full transition-transform duration-300 ease-in-out border-r border-cyan-500/20">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-white/10">
+        <div class="flex items-center gap-3">
+          <img src="assets/img/logo-pluga.png" alt="Logo Pluga" class="w-9 h-9 object-contain">
+          <div>
+            <span class="text-xl font-black text-white">Pluga</span>
+            <span class="text-[10px] font-extrabold text-[#00e676] block tracking-widest">FLOW</span>
+          </div>
+        </div>
+        <button id="closeMobileMenu" onclick="document.getElementById('mobileOverlay').click()" class="text-slate-400 hover:text-white">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mt-8 flex flex-col gap-4">
+        <a href="#inicio" class="mobile-link text-lg font-semibold text-white hover:text-[#00e676]">Início</a>
+        <a href="#recursos" class="mobile-link text-lg font-semibold text-slate-300 hover:text-[#00e676]">Recursos</a>
+        <a href="#cases" class="mobile-link text-lg font-semibold text-slate-300 hover:text-[#00e676]">Cases de Sucesso</a>
+        <a href="#como-funciona" class="mobile-link text-lg font-semibold text-slate-300 hover:text-[#00e676]">Como Funciona</a>
+        <a href="#planos" class="mobile-link text-lg font-semibold text-slate-300 hover:text-[#00e676]">Planos & Valores</a>
+        <a href="#faq" class="mobile-link text-lg font-semibold text-slate-300 hover:text-[#00e676]">Perguntas Frequentes</a>
+        <a href="#contato" class="mobile-link text-lg font-semibold text-slate-300 hover:text-[#00e676]">Falar com Especialista</a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-white/10">
+      <a href="#contato" class="btn-open-contact mobile-link btn-pluga-neon w-full py-3 rounded-xl text-center font-bold text-slate-900 block">
+        Conheça o Pluga
+      </a>
+      <p class="text-center text-xs text-slate-400 mt-3">pluga.xpanel.com.br</p>
+    </div>
+  </aside>
+
+  <!-- ========================================================
+       HERO SECTION
+       ======================================================== -->
+  <section id="inicio" class="relative pt-24 lg:pt-32 pb-0 bg-pluga-hero overflow-hidden">
+    <!-- Efeitos de iluminação de fundo -->
+    <div class="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-cyan-500/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 left-10 w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end">
+        
+        <!-- Coluna da Esquerda (Textos & Ações) -->
+        <div class="lg:col-span-7 flex flex-col items-start text-left pt-6 pb-12 lg:pb-24">
+          
+          <!-- Badge Oficial Pluga -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-xs font-bold uppercase tracking-wider mb-5">
+            <span class="w-2 h-2 rounded-full bg-[#00e676] animate-pulse"></span>
+            Plataforma Oficial de Vendas Diretas
+          </div>
+
+          <!-- Frase de Chamada -->
+          <p class="text-lg md:text-xl text-slate-200 font-medium mb-3">
+            Pluga — para <span class="text-[#00e676] font-bold">conectar seu empreendimento</span> a quem quer seus produtos.
+          </p>
+
+          <!-- Título Principal -->
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.1] mb-6">
+            Sua loja. Seu domínio.<br>
+            <span class="text-[#00e676] glow-neon-text">Seus clientes.</span>
+          </h1>
+
+          <!-- Subtítulo -->
+          <p class="text-base sm:text-lg text-slate-300 max-w-xl font-normal leading-relaxed mb-8">
+            Um canal próprio de vendas, com sua marca, seus pedidos e suas estratégias de fidelização.
+          </p>
+
+          <!-- CTAs da Hero -->
+          <div class="flex flex-wrap items-center gap-4 w-full sm:w-auto">
+            <a href="#contato" class="btn-open-contact btn-pluga-neon inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full text-base font-extrabold tracking-wide text-slate-950 w-full sm:w-auto">
+              <svg class="w-5 h-5 text-slate-950" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L9 9l-7 2 5 5-1 7 6-3 6 3-1-7 5-5-7-2z"/>
+              </svg>
+              Conheça o Pluga
+              <svg class="w-5 h-5 text-slate-950" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
+
+            <button class="btn-open-demo btn-pluga-outline inline-flex items-center justify-center gap-3 px-7 py-4 rounded-full text-base font-semibold text-white w-full sm:w-auto">
+              <span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
+                <svg class="w-3.5 h-3.5 fill-white translate-x-0.5" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </span>
+              Ver demonstração
+            </button>
+          </div>
+
+          <!-- Micro Badge de Segurança e Domínio -->
+          <div class="mt-8 flex items-center gap-2 text-xs text-slate-400 font-medium">
+            <span class="w-2 h-2 rounded-full bg-[#00e676] inline-block animate-ping"></span>
+            <span>Hospedado no cluster SXConnect • Subdomínio ativo: <strong class="text-slate-200">pluga.xpanel.com.br</strong></span>
+          </div>
+
+        </div>
+
+        <!-- Coluna da Direita (Segunda Logo Maior Alinhada à Direita + Modelo com Celular) -->
+        <div class="lg:col-span-5 relative flex flex-col items-end justify-between self-end w-full h-full">
+          
+          <!-- Segunda Logo do Pluga Flow: MAIOR e ALINHADA À DIREITA -->
+          <div class="w-full flex justify-end items-center gap-4 mb-4 lg:mb-6 pr-2 lg:pr-4">
+            <img src="assets/img/logo-pluga.png" alt="Pluga Flow Oficial" class="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 object-contain drop-shadow-[0_10px_30px_rgba(0,230,118,0.45)] transition-transform duration-300 hover:scale-105">
+            <div class="flex flex-col text-left">
+              <span class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-none">Pluga</span>
+              <span class="text-lg sm:text-xl lg:text-2xl font-black text-[#00e676] tracking-[0.25em] leading-none mt-2 uppercase">FLOW</span>
+            </div>
+          </div>
+
+          <!-- Glow Neon Traseiro Volumétrico -->
+          <div class="absolute bottom-10 right-10 w-72 h-72 sm:w-96 sm:h-96 bg-gradient-to-tr from-[#00e676]/25 to-[#00d2ff]/25 rounded-full filter blur-3xl pointer-events-none"></div>
+
+          <!-- Imagem Oficial sem Card assumindo a base e altura da Seção -->
+          <img src="assets/img/hero-woman-transparent.png" 
+               alt="Pluga Flow - Sua loja sempre conectada!" 
+               class="relative z-10 w-auto max-h-[460px] sm:max-h-[520px] lg:max-h-[580px] xl:max-h-[620px] object-contain object-bottom drop-shadow-[0_20px_40px_rgba(0,0,0,0.65)] select-none pointer-events-none transition-transform duration-300 hover:scale-[1.02]" 
+               loading="eager">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SEÇÃO: O QUE O PLUGA ENTREGA?
+       ======================================================== -->
+  <section id="recursos" class="py-20 lg:py-28 bg-[#f8fafc] border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Título da Seção -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">
+          O que o <span class="text-[#00e676] inline-block font-black">Pluga</span> entrega?
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-slate-600 font-normal">
+          Tudo o que sua operação precisa para vender online de forma profissional, sem intermediários e com total controle.
+        </p>
+      </div>
+
+      <!-- Grid dos 6 Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        
+        <!-- Card 1: Loja digital no seu domínio -->
+        <div class="feature-card bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+          <div class="w-20 h-20 mb-6 flex items-center justify-center rounded-2xl bg-sky-50 group-hover:scale-105 transition-transform">
+            <img src="assets/icons/store.svg" alt="Loja digital no seu domínio" class="w-14 h-14">
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-sky-600 transition-colors">
+            Loja digital no seu domínio
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Catálogo/cardápio com produtos, fotos, preços e categorias.
+          </p>
+        </div>
+
+        <!-- Card 2: Pedidos online organizados -->
+        <div class="feature-card bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+          <div class="w-20 h-20 mb-6 flex items-center justify-center rounded-2xl bg-sky-50 group-hover:scale-105 transition-transform">
+            <img src="assets/icons/clipboard-orders.svg" alt="Pedidos online organizados" class="w-14 h-14">
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-sky-600 transition-colors">
+            Pedidos online organizados
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Pedidos centralizados em painel administrativo.
+          </p>
+        </div>
+
+        <!-- Card 3: Clube de clientes -->
+        <div class="feature-card bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+          <div class="w-20 h-20 mb-6 flex items-center justify-center rounded-2xl bg-emerald-50 group-hover:scale-105 transition-transform">
+            <img src="assets/icons/customer-club.svg" alt="Clube de clientes" class="w-14 h-14">
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-emerald-600 transition-colors">
+            Clube de clientes
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Fidelização com benefícios, descontos e planos configuráveis.
+          </p>
+        </div>
+
+        <!-- Card 4: Entrega configurada -->
+        <div class="feature-card bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+          <div class="w-20 h-20 mb-6 flex items-center justify-center rounded-2xl bg-emerald-50 group-hover:scale-105 transition-transform">
+            <img src="assets/icons/delivery-bike.svg" alt="Entrega configurada" class="w-14 h-14">
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-emerald-600 transition-colors">
+            Entrega configurada
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Regiões, distâncias e taxas de entrega definidas pela loja.
+          </p>
+        </div>
+
+        <!-- Card 5: Pagamento integrado -->
+        <div class="feature-card bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+          <div class="w-20 h-20 mb-6 flex items-center justify-center rounded-2xl bg-sky-50 group-hover:scale-105 transition-transform">
+            <img src="assets/icons/payment-gateway.svg" alt="Pagamento integrado" class="w-14 h-14">
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-sky-600 transition-colors">
+            Pagamento integrado
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Opção de pagamento online via gateway compatível.
+          </p>
+        </div>
+
+        <!-- Card 6: Área do entregador -->
+        <div class="feature-card bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group">
+          <div class="w-20 h-20 mb-6 flex items-center justify-center rounded-2xl bg-sky-50 group-hover:scale-105 transition-transform">
+            <img src="assets/icons/delivery-rider.svg" alt="Área do entregador" class="w-14 h-14">
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-sky-600 transition-colors">
+            Área do entregador
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Apoio à operação e acompanhamento dos pedidos de entrega.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SEÇÃO DUPLA (SPLIT): VOCÊ DONO DO CANAL + CASE POLPE'S
+       ======================================================== -->
+  <section id="cases" class="py-20 lg:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- CARD ESQUERDO: Você continua sendo dono do seu canal (Fundo Dark) -->
+        <div class="lg:col-span-5 bg-pluga-dark-card rounded-3xl p-8 sm:p-10 flex flex-col justify-between relative overflow-hidden shadow-2xl">
+          <!-- Brilho de fundo -->
+          <div class="absolute -top-12 -right-12 w-48 h-48 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+          <div>
+            <!-- Título do Bloco -->
+            <h3 class="text-2xl sm:text-3xl font-black text-white tracking-tight leading-snug mb-8">
+              Você continua sendo dono do seu canal
+            </h3>
+
+            <!-- Lista de Benefícios com Checks Verdes -->
+            <ul class="space-y-5">
+              <li class="flex items-center gap-3.5">
+                <span class="w-7 h-7 rounded-full bg-[#00e676]/20 border border-[#00e676] flex items-center justify-center flex-shrink-0">
+                  <svg class="w-4 h-4 text-[#00e676]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </span>
+                <span class="text-base font-semibold text-slate-200">Sua marca e identidade</span>
+              </li>
+
+              <li class="flex items-center gap-3.5">
+                <span class="w-7 h-7 rounded-full bg-[#00e676]/20 border border-[#00e676] flex items-center justify-center flex-shrink-0">
+                  <svg class="w-4 h-4 text-[#00e676]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </span>
+                <span class="text-base font-semibold text-slate-200">Relacionamento direto com clientes</span>
+              </li>
+
+              <li class="flex items-center gap-3.5">
+                <span class="w-7 h-7 rounded-full bg-[#00e676]/20 border border-[#00e676] flex items-center justify-center flex-shrink-0">
+                  <svg class="w-4 h-4 text-[#00e676]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </span>
+                <span class="text-base font-semibold text-slate-200">Autonomia para promoções e fidelização</span>
+              </li>
+
+              <li class="flex items-center gap-3.5">
+                <span class="w-7 h-7 rounded-full bg-[#00e676]/20 border border-[#00e676] flex items-center justify-center flex-shrink-0">
+                  <svg class="w-4 h-4 text-[#00e676]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </span>
+                <span class="text-base font-semibold text-slate-200">Menos dependência de marketplaces</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Ícone Neon decorativo no rodapé do card -->
+          <div class="mt-8 pt-6 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xs font-semibold text-slate-400">Canal 100% próprio</span>
+            <img src="assets/icons/store-neon.svg" alt="Loja Neon" class="w-14 h-14">
+          </div>
+        </div>
+
+        <!-- CARD DIREITO: Veja funcionando na Polpe's (Fundo Claro) -->
+        <div class="lg:col-span-7 bg-[#f8fafc] border border-slate-200/80 rounded-3xl p-8 sm:p-10 flex flex-col justify-between relative overflow-hidden shadow-sm">
+          
+          <div>
+            <!-- Cabeçalho do Case -->
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-3">
+              <h3 class="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+                Veja funcionando na <span class="text-[#701a75]">Polpe's</span>
+              </h3>
+              <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-[#701a75]/10 text-[#701a75] uppercase tracking-wide">
+                Case de Sucesso Real
+              </span>
+            </div>
+
+            <p class="text-base text-slate-600 mb-6">
+              Uma loja real, com a força do <strong>Pluga Flow</strong> para vender mais.
+            </p>
+          </div>
+
+          <!-- Composição Visual: Logo Correta da Polpe's + Mockup dos Smartphones -->
+          <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center my-4">
+            
+            <!-- Logo Polpe's e Informações do Negócio -->
+            <div class="sm:col-span-6 flex flex-col items-center sm:items-start text-center sm:text-left">
+              <div class="mb-3">
+                <img src="assets/img/logo-polpes.png" alt="Logo Oficial Polpe's Açaí" class="h-28 sm:h-32 w-auto object-contain drop-shadow-lg">
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                "Sabores que conectam momentos!" — Cardápio completo de açaí, sorvetes artesanais e clube de assinantes integrado ao WhatsApp.
+              </p>
+              
+              <!-- Botão para abrir o site real polpes.com.br em outra guia -->
+              <div class="flex flex-wrap items-center gap-3">
+                <a href="https://polpes.com.br" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#701a75] text-white text-xs font-bold hover:bg-[#581c87] transition-all shadow-md hover:scale-105" title="Abrir site oficial polpes.com.br em nova guia">
+                  <span>Abrir polpes.com.br</span>
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                </a>
+                <button class="btn-open-demo inline-flex items-center gap-1.5 text-xs font-bold text-slate-600 hover:text-slate-900 transition-colors">
+                  <span>Simular no painel</span>
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Smartphones Polpe's com link para abrir em nova guia -->
+            <div class="sm:col-span-6 flex justify-center sm:justify-end">
+              <a href="https://polpes.com.br" target="_blank" rel="noopener noreferrer" class="relative group cursor-pointer block" title="Clique para abrir polpes.com.br em nova guia">
+                <img src="assets/img/polpes-phones.png" alt="Cardápio Polpe's no Smartphone" class="w-64 sm:w-72 h-auto object-contain drop-shadow-2xl transition-transform duration-300 group-hover:scale-105">
+                <div class="absolute -bottom-2 right-4 bg-[#701a75] text-white text-[11px] font-bold px-3 py-1.5 rounded-full shadow-lg border border-white/20 flex items-center gap-1.5 group-hover:bg-[#581c87] transition-colors">
+                  <span>Acessar polpes.com.br</span>
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                  </svg>
+                </div>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Rodapé do Card com métricas -->
+          <div class="mt-6 pt-4 border-t border-slate-200/80 flex flex-wrap items-center justify-between text-xs text-slate-500 gap-2">
+            <span>✓ Nilópolis - RJ</span>
+            <span>✓ +90 produtos cadastrados</span>
+            <span>✓ Clube de Benefícios Ativo</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SEÇÃO: COMO FUNCIONA
+       ======================================================== -->
+  <section id="como-funciona" class="py-20 lg:py-28 bg-[#f8fafc] border-t border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Título -->
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          Como funciona
+        </h2>
+        <p class="mt-3 text-slate-600 text-base">
+          Do diagnóstico inicial até os primeiros pedidos rodando na sua loja em 3 etapas simples.
+        </p>
+      </div>
+
+      <!-- 3 Passos Conectados com Setas Verdes -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative items-start">
+        
+        <!-- Passo 1 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm flex flex-col items-center text-center relative group hover:border-[#00e676] transition-all">
+          <div class="w-16 h-16 mb-5 flex items-center justify-center rounded-2xl">
+            <img src="assets/icons/step-chat.svg" alt="Passo 1" class="w-14 h-14">
+          </div>
+          <div class="inline-block px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold mb-3">
+            Passo 1
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">
+            1. Conversa e Diagnóstico
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Entendemos sua necessidade e apresentamos a melhor solução para o seu modelo de vendas.
+          </p>
+
+          <!-- Seta indicadora (Desktop) -->
+          <div class="hidden md:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-slate-200 items-center justify-center shadow-md">
+            <svg class="w-5 h-5 text-[#00e676]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Passo 2 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm flex flex-col items-center text-center relative group hover:border-[#00e676] transition-all">
+          <div class="w-16 h-16 mb-5 flex items-center justify-center rounded-2xl">
+            <img src="assets/icons/step-settings.svg" alt="Passo 2" class="w-14 h-14">
+          </div>
+          <div class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold mb-3">
+            Passo 2
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">
+            2. Implantação Personalizada
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Configuramos sua loja, cardápio, pagamentos, regras de entrega e identidade visual.
+          </p>
+
+          <!-- Seta indicadora (Desktop) -->
+          <div class="hidden md:flex absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white border border-slate-200 items-center justify-center shadow-md">
+            <svg class="w-5 h-5 text-[#00e676]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Passo 3 -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm flex flex-col items-center text-center relative group hover:border-[#00e676] transition-all">
+          <div class="w-16 h-16 mb-5 flex items-center justify-center rounded-2xl">
+            <img src="assets/icons/step-rocket.svg" alt="Passo 3" class="w-14 h-14">
+          </div>
+          <div class="inline-block px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold mb-3">
+            Passo 3
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">
+            3. Loja Pronta para Divulgar
+          </h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Você já começa a receber pedidos, fidelizar seus clientes e faturar sem pagar comissões abusivas.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       CONSULTA DE DISPONIBILIDADE DE DOMÍNIO PRÓPRIO
+       ======================================================== -->
+  <section id="dominios" class="py-16 lg:py-20 bg-slate-50 border-t border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      
+      <!-- Badge de Domínio Próprio -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100/70 border border-[#00e676]/40 text-emerald-800 text-xs font-black uppercase tracking-wider mb-4 shadow-sm">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#00e676] animate-pulse"></span>
+        Domínio Próprio Oficial (.com.br)
+      </div>
+
+      <!-- Título & Subtítulo -->
+      <h3 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-3">
+        Consulte a disponibilidade do seu domínio próprio
+      </h3>
+      <p class="text-slate-600 text-base max-w-2xl mx-auto mb-8">
+        Sua loja merece um endereço exclusivo na internet (<strong class="text-slate-800">ex: sualoja.com.br</strong>). Digite o nome da sua marca para pesquisar em tempo real se ele está livre para registro:
+      </p>
+
+      <!-- Formulário de Busca de Domínio -->
+      <div class="max-w-2xl mx-auto bg-white border border-slate-200 rounded-3xl p-4 sm:p-6 shadow-xl text-left">
+        <form id="domainSearchForm" class="flex flex-col sm:flex-row items-center gap-3">
+          <div class="relative w-full">
+            <span class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+              </svg>
+            </span>
+            <input type="text" 
+                   id="domainSearchInput" 
+                   required
+                   placeholder="Digite o nome da sua loja (ex: polpes, deliciasdacasa)" 
+                   class="w-full pl-11 pr-4 py-3.5 rounded-2xl border border-slate-200 focus:outline-none focus:border-[#00e676] focus:ring-2 focus:ring-[#00e676]/20 font-medium text-slate-900 text-base placeholder-slate-400">
+          </div>
+
+          <div class="flex items-center gap-2 w-full sm:w-auto">
+            <select id="domainTldSelect" class="py-3.5 px-3 rounded-2xl border border-slate-200 bg-slate-50 font-bold text-slate-800 focus:outline-none focus:border-[#00e676] text-sm">
+              <option value=".com.br">.com.br</option>
+              <option value=".com">.com</option>
+            </select>
+
+            <button type="submit" id="domainSearchBtn" class="btn-pluga-neon py-3.5 px-6 rounded-2xl text-slate-950 font-black text-sm uppercase tracking-wider flex items-center justify-center gap-2 flex-shrink-0 shadow-md">
+              <svg class="w-4 h-4 text-slate-950" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+              </svg>
+              <span>Pesquisar</span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Indicador de Carregamento (Loading) -->
+        <div id="domainLoading" class="hidden mt-6 p-4 rounded-2xl bg-slate-50 border border-slate-200 text-center text-slate-600">
+          <div class="inline-flex items-center gap-3">
+            <svg class="animate-spin w-5 h-5 text-emerald-600" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+            </svg>
+            <span class="text-sm font-semibold">Consultando disponibilidade no Registro.br...</span>
+          </div>
+        </div>
+
+        <!-- RESULTADO: DISPONÍVEL -->
+        <div id="domainResultAvailable" class="hidden mt-6 p-5 rounded-2xl bg-emerald-50 border border-emerald-300 text-slate-900 animate-fadeIn">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-[#00e676] flex items-center justify-center flex-shrink-0 text-slate-950 shadow">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                </svg>
+              </div>
+              <div>
+                <div class="text-xs font-bold text-emerald-800 uppercase tracking-wider">Ótima Notícia! Domínio Disponível</div>
+                <div id="availableDomainName" class="text-lg sm:text-xl font-black text-slate-900 font-mono">sualoja.com.br</div>
+              </div>
+            </div>
+
+            <a id="domainRegisterCta" 
+               href="https://wa.me/5521987000079?text=Ol%C3%A1%20SxConnect!%20Gostaria%20de%20registrar%20meu%20dom%C3%ADnio%20e%20conectar%20no%20Pluga%20Flow!" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-pluga-neon py-2.5 px-5 rounded-xl text-slate-950 font-black text-xs uppercase tracking-wider flex items-center gap-2 whitespace-nowrap shadow">
+              <span>Registrar e Conectar no Pluga</span>
+              <span>→</span>
+            </a>
+          </div>
+          <p class="text-xs text-emerald-800 mt-3 pt-3 border-t border-emerald-200">
+            ✓ Esse domínio pode ser registrado para sua empresa agora. Nossa equipe configura o apontamento e o certificado de segurança SSL grátis para a sua loja no Pluga Flow.
+          </p>
+        </div>
+
+        <!-- RESULTADO: JÁ REGISTRADO / INDISPONÍVEL -->
+        <div id="domainResultTaken" class="hidden mt-6 p-5 rounded-2xl bg-amber-50 border border-amber-300 text-slate-900 animate-fadeIn">
+          <div class="flex items-start gap-3">
+            <div class="w-10 h-10 rounded-full bg-amber-500 text-white flex items-center justify-center flex-shrink-0 shadow">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <div class="text-xs font-bold text-amber-800 uppercase tracking-wider">Domínio já possui registro</div>
+              <div id="takenDomainName" class="text-lg font-black text-slate-900 font-mono">sualoja.com.br</div>
+              <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                <strong>Se esse domínio já é seu:</strong> Excelente! Nós cuidaremos da configuração para apontá-lo diretamente para a sua nova loja no Pluga Flow.<br>
+                <strong>Se ainda não é seu:</strong> Que tal experimentar uma dessas alternativas disponíveis abaixo?
+              </p>
+
+              <!-- Sugestões de alternativas -->
+              <div class="mt-3 flex flex-wrap gap-2" id="domainSuggestions"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-500">
+        <span>🔒 Certificado SSL HTTPS incluso</span>
+        <span>🌐 Totalmente no seu nome / CNPJ / CPF</span>
+        <span>⚡ Conexão direta sem intermediários</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SEÇÃO: OFERTA & PREÇOS (PRICING BANNER)
+       ======================================================== -->
+  <section id="planos" class="py-16 lg:py-20 bg-pluga-pricing relative overflow-hidden">
+    <!-- Glow Neon Fundo -->
+    <div class="absolute inset-0 bg-radial-gradient pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="bg-[#07152b] border border-[#00e676]/30 rounded-3xl p-8 sm:p-12 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center text-center lg:text-left">
+          
+          <!-- Bloco 1: Implantação -->
+          <div class="lg:col-span-3 flex flex-col items-center lg:items-start justify-center">
+            <span class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-1">
+              Implantação
+            </span>
+            <div class="text-4xl sm:text-5xl font-black text-white tracking-tight">
+              R$ <span class="text-white">300</span>
+            </div>
+            <span class="text-xs text-slate-400 mt-1">Taxa única de setup completo</span>
+          </div>
+
+          <!-- Separador Vertical (Desktop) -->
+          <div class="hidden lg:block lg:col-span-1 h-20 w-[1px] bg-slate-700 mx-auto"></div>
+
+          <!-- Bloco 2: Mensalidade -->
+          <div class="lg:col-span-4 flex flex-col items-center lg:items-start justify-center">
+            <div class="flex items-baseline gap-2">
+              <span class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
+                R$ 99,90
+              </span>
+              <span class="text-slate-300 font-bold text-xl">/mês</span>
+            </div>
+            <p class="text-xs text-slate-400 mt-2 max-w-sm">
+              Domínio e taxas do meio de pagamento contratados à parte.
+            </p>
+          </div>
+
+          <!-- Bloco 3: Botão de Ação CTA -->
+          <div class="lg:col-span-4 flex justify-center lg:justify-end">
+            <a href="#contato" class="btn-open-contact btn-pluga-neon inline-flex items-center justify-center gap-3 px-8 py-5 rounded-2xl text-base font-black text-slate-950 uppercase tracking-wide shadow-2xl w-full sm:w-auto">
+              <svg class="w-6 h-6 text-slate-950" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12c0 1.82.49 3.53 1.34 5L2 22l5.17-1.31A9.957 9.957 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+              <span>Vamos conectar sua loja?</span>
+              <svg class="w-5 h-5 text-slate-950" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SEÇÃO: PERGUNTAS FREQUENTES (FAQ)
+       ======================================================== -->
+  <section id="faq" class="py-20 lg:py-24 bg-[#f8fafc]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          Perguntas Frequentes
+        </h2>
+        <p class="mt-3 text-slate-600 text-base">
+          Tire suas dúvidas e veja por que o Pluga Flow é o melhor investimento para o seu negócio.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden transition-all">
+          <button class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left font-bold text-slate-900 text-base sm:text-lg focus:outline-none">
+            <span>O Pluga cobra comissão sobre as minhas vendas?</span>
+            <svg class="faq-chevron w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-content px-6 pb-5 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            <strong>Não! Zero comissão.</strong> Diferente de plataformas de marketplace que cobram de 15% a 27% sobre cada pedido, no Pluga Flow todo o lucro das suas vendas é 100% da sua empresa. Você paga apenas a mensalidade fixa de R$ 99,90.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden transition-all">
+          <button class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left font-bold text-slate-900 text-base sm:text-lg focus:outline-none">
+            <span>Como funciona o domínio da loja?</span>
+            <svg class="faq-chevron w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-content px-6 pb-5 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Sua loja pode começar de forma instantânea em um subdomínio oficial do XPanel (como <em>sualoja.xpanel.com.br</em>) ou você pode apontar o seu domínio próprio personalizado (como <em>sualoja.com.br</em>). Toda a configuração de DNS e certificado de segurança SSL é orientada pela nossa equipe.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden transition-all">
+          <button class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left font-bold text-slate-900 text-base sm:text-lg focus:outline-none">
+            <span>O que está incluso na taxa de implantação de R$ 300?</span>
+            <svg class="faq-chevron w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-content px-6 pb-5 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            A implantação inclui: cadastro inicial de produtos com categorias, fotos e preços; configuração da sua identidade visual (logo e cores); integração do meio de pagamento online e Pix; configuração das zonas de entrega com cálculo por raio/km; e treinamento prático para você operar os pedidos com facilidade.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden transition-all">
+          <button class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left font-bold text-slate-900 text-base sm:text-lg focus:outline-none">
+            <span>Como meus clientes realizam o pagamento?</span>
+            <svg class="faq-chevron w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-content px-6 pb-5 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Você pode receber via <strong>Pix com confirmação imediata</strong>, cartões de crédito/débito online via gateway parceiro (como Mercado Pago, PagSeguro ou Asaas) ou permitir o pagamento na entrega (maquininha ou dinheiro com troco). O dinheiro cai direto na sua conta.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden transition-all">
+          <button class="faq-trigger w-full px-6 py-5 flex items-center justify-between text-left font-bold text-slate-900 text-base sm:text-lg focus:outline-none">
+            <span>Há fidelidade ou multa rescisória?</span>
+            <svg class="faq-chevron w-5 h-5 text-slate-400 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="faq-content px-6 pb-5 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Não existe fidelidade e nem contratos de longo prazo com multa. Você continua conosco porque a ferramenta gera vendas reais para o seu negócio todos os dias.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SEÇÃO: CONTATO DIRETO / FORMULÁRIO WHATSAPP
+       ======================================================== -->
+  <section id="contato" class="py-20 lg:py-24 bg-white border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="inline-block px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-widest bg-[#00e676]/15 text-emerald-700 mb-3">
+          Atendimento Direto
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          Pronto para ter seu canal de vendas?
+        </h2>
+        <p class="mt-3 text-slate-600 text-base max-w-xl mx-auto">
+          Fale com nosso time de implantação e comece a vender pelo Pluga Flow esta semana.
+        </p>
+      </div>
+
+      <!-- Formulário de Contato Direto -->
+      <div class="bg-[#07152b] rounded-3xl p-8 sm:p-12 border border-cyan-500/20 shadow-2xl">
+        <form id="contactForm" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Seu Nome</label>
+              <input type="text" id="contactName" required placeholder="Como podemos te chamar?" class="w-full px-4 py-3 rounded-xl bg-[#0a1c38] border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-[#00e676] focus:ring-1 focus:ring-[#00e676]">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Nome da Loja / Marca</label>
+              <input type="text" id="contactStore" required placeholder="Ex: Açaiteria Tropical" class="w-full px-4 py-3 rounded-xl bg-[#0a1c38] border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-[#00e676] focus:ring-1 focus:ring-[#00e676]">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Segmento do Negócio</label>
+              <select id="contactSegment" class="w-full px-4 py-3 rounded-xl bg-[#0a1c38] border border-slate-700 text-white focus:outline-none focus:border-[#00e676]">
+                <option value="Açaí e Sorvetes">Açaí e Sorvetes</option>
+                <option value="Restaurante / Lanchonete">Restaurante / Lanchonete</option>
+                <option value="Pizzaria">Pizzaria</option>
+                <option value="Hamburgueria">Hamburgueria</option>
+                <option value="Doceria / Confeitaria">Doceria / Confeitaria</option>
+                <option value="Bebidas / Distribuidora">Bebidas / Distribuidora</option>
+                <option value="Moda / Vestuário">Moda / Vestuário</option>
+                <option value="Outro segmento">Outro segmento</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Cidade / Estado</label>
+              <input type="text" id="contactCity" placeholder="Ex: Nilópolis - RJ" class="w-full px-4 py-3 rounded-xl bg-[#0a1c38] border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-[#00e676] focus:ring-1 focus:ring-[#00e676]">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Observações ou Dúvidas (Opcional)</label>
+            <textarea id="contactMsg" rows="3" placeholder="Conte-nos um pouco sobre como funciona sua operação hoje..." class="w-full px-4 py-3 rounded-xl bg-[#0a1c38] border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-[#00e676] focus:ring-1 focus:ring-[#00e676]"></textarea>
+          </div>
+
+          <div class="pt-2">
+            <button type="submit" class="btn-pluga-neon w-full py-4 rounded-xl text-slate-950 font-black text-base uppercase tracking-wider flex items-center justify-center gap-3">
+              <svg class="w-5 h-5 text-slate-950" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/>
+              </svg>
+              Iniciar Implantação no WhatsApp
+            </button>
+            <p class="text-center text-xs text-slate-400 mt-3">
+              Resposta rápida em horário comercial • Atendimento direto por especialista
+            </p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FOOTER / RODAPÉ
+       ======================================================== -->
+  <footer class="bg-[#050e1d] text-white py-12 border-t border-cyan-500/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-8 border-b border-white/10">
+        
+        <!-- Logo e Assinatura Oficial idêntica à imagem -->
+        <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center sm:text-left">
+          
+          <div class="flex items-center gap-3">
+            <img src="assets/img/logo-pluga.png" alt="Logo Oficial Pluga" class="w-10 h-10 object-contain">
+            <div>
+              <span class="text-2xl font-black text-white leading-none">Pluga</span>
+              <span class="text-xs font-black text-[#00e676] block tracking-widest leading-none mt-1">FLOW</span>
+            </div>
+          </div>
+
+          <div class="hidden sm:block h-10 w-[1px] bg-slate-700"></div>
+
+          <div>
+            <div class="text-sm font-extrabold text-slate-200 tracking-wide">
+              Pluga Flow • SXConnect
+            </div>
+            <div class="text-xs text-slate-400 mt-0.5">
+              Conectando marcas, produtos e pessoas
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Links Rápidos -->
+        <div class="flex flex-wrap items-center justify-center gap-6 text-xs font-semibold text-slate-400">
+          <a href="#inicio" class="hover:text-white transition-colors">Início</a>
+          <a href="#recursos" class="hover:text-white transition-colors">Recursos</a>
+          <a href="#cases" class="hover:text-white transition-colors">Case Polpe's</a>
+          <a href="#planos" class="hover:text-white transition-colors">Planos</a>
+          <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+          <a href="#contato" class="hover:text-white transition-colors">Contato</a>
+        </div>
+
+      </div>
+
+      <!-- Copyright e Subdomínio -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 text-center sm:text-left">
+        <div>
+          © 2026 Pluga Flow • SXConnect. Todos os direitos reservados.
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-[#00e676]"></span>
+          <span>Instância Inicial: <code class="text-slate-300 font-mono">pluga.xpanel.com.br</code></span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       MODAL DE DEMONSTRAÇÃO INTERATIVA
+       ======================================================== -->
+  <div id="demoModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4">
+    <div id="demoOverlay" class="fixed inset-0 bg-black/80 backdrop-blur-md transition-opacity"></div>
+    
+    <div class="relative w-full max-w-4xl bg-[#091a35] border border-cyan-500/30 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] z-10 animate-scale">
+      
+      <!-- Cabeçalho da Demonstração -->
+      <div class="p-5 border-b border-white/10 flex items-center justify-between bg-[#07152b]">
+        <div class="flex items-center gap-3">
+          <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+          <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+          <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+          <span class="text-sm font-bold text-white ml-2">Demonstração Interativa Pluga Flow</span>
+        </div>
+
+        <!-- Tabs de Alternância & Link Externo Polpe's -->
+        <div class="flex items-center bg-[#051020] p-1 rounded-xl border border-white/10 gap-2">
+          <a href="https://polpes.com.br" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-[#701a75] text-white hover:bg-[#581c87] transition-all flex items-center gap-1.5 shadow-sm" title="Abrir site oficial polpes.com.br em nova guia">
+            <span>🌐 Abrir polpes.com.br</span>
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+          <button id="tabDemoCustomer" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-[#00e676] text-slate-900 transition-all">
+            📱 Simulação Cardápio
+          </button>
+          <button id="tabDemoAdmin" class="px-3 py-1.5 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition-all">
+            💻 Painel do Lojista
+          </button>
+        </div>
+
+        <button id="closeDemoModal" class="text-slate-400 hover:text-white p-1">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Conteúdo do Modal (Scrollável) -->
+      <div class="p-6 overflow-y-auto flex-1">
+        
+        <!-- VISÃO 1: CARDÁPIO DO CLIENTE (POLPE'S) -->
+        <div id="demoViewCustomer" class="space-y-6">
+          <div class="max-w-md mx-auto bg-white rounded-3xl p-5 shadow-2xl border-4 border-slate-800 text-slate-900">
+            <!-- Topo do Cardápio -->
+            <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+              <div class="flex items-center gap-3">
+                <img src="assets/img/logo-polpes.png" alt="Polpe's" class="h-12 w-12 object-contain">
+                <div>
+                  <div class="text-xs font-bold text-slate-900">Polpe's Açaí & Sorvetes</div>
+                  <div class="text-[10px] text-emerald-600 font-semibold">● Aberto agora • Entrega em 35min</div>
+                </div>
+              </div>
+              <a href="https://polpes.com.br" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 rounded-lg bg-[#701a75]/10 text-[#701a75] hover:bg-[#701a75] hover:text-white transition-colors text-[10px] font-bold flex items-center gap-1" title="Abrir site oficial">
+                <span>polpes.com.br</span>
+                <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Banner do Clube -->
+            <div class="mt-4 bg-gradient-to-r from-purple-900 to-indigo-900 text-white p-3 rounded-2xl flex items-center justify-between">
+              <div>
+                <div class="text-[11px] font-bold text-amber-300">★ Clube Sabores Polpe's</div>
+                <div class="text-[10px] text-slate-200">Preço VIP em todos os açaís e combos</div>
+              </div>
+              <span class="text-[10px] bg-white/20 px-2 py-1 rounded-lg font-bold">Ativo</span>
+            </div>
+
+            <!-- Produto Destaque Interativo -->
+            <div class="mt-4 border border-slate-200 rounded-2xl p-3 flex gap-3 items-center">
+              <img src="assets/img/acai-familia.webp" alt="Açaí Max Família" class="w-20 h-20 rounded-xl object-cover">
+              <div class="flex-1">
+                <h4 class="text-xs font-extrabold text-slate-900">Açaí Max Família 1000ml</h4>
+                <p class="text-[10px] text-slate-500 mt-0.5">Açaí premium puro com até 4 guloseimas gratuitas.</p>
+                <div class="mt-2 flex items-center justify-between">
+                  <div>
+                    <span class="text-xs font-black text-slate-900">R$ 40,00</span>
+                    <span class="text-[10px] text-emerald-600 font-bold ml-1">(R$ 35,00 no Clube)</span>
+                  </div>
+                  <button id="demoAddToCart" class="px-3 py-1 rounded-lg bg-[#00e676] text-slate-950 font-black text-xs hover:bg-[#0df27c] transition-colors">
+                    Adicionar +
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Outros produtos simulados -->
+            <div class="mt-3 border border-slate-200 rounded-2xl p-3 flex gap-3 items-center">
+              <img src="assets/img/acai-copo.webp" alt="Açaí Copo 500ml" class="w-16 h-16 rounded-xl object-cover">
+              <div class="flex-1">
+                <h4 class="text-xs font-extrabold text-slate-900">Copo Açaí Tradicional 500ml</h4>
+                <div class="mt-1 flex items-center justify-between">
+                  <span class="text-xs font-black text-slate-900">R$ 22,00</span>
+                  <span class="text-[11px] text-slate-400">Ver opções</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botão Fechar Pedido Simulador & Link Externo -->
+            <div class="mt-4 pt-3 border-t border-slate-100 space-y-2">
+              <a href="https://polpes.com.br" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 rounded-xl bg-[#701a75] hover:bg-[#581c87] text-white font-bold text-xs flex items-center justify-center gap-2 transition-colors shadow">
+                <span>Ver Cardápio Oficial em polpes.com.br</span>
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                </svg>
+              </a>
+              <button class="w-full py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-xs flex items-center justify-center gap-2 transition-colors">
+                <span>Simular Fechamento no WhatsApp →</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- VISÃO 2: PAINEL ADMINISTRATIVO DO LOJISTA -->
+        <div id="demoViewAdmin" class="hidden space-y-6">
+          <div class="bg-[#051020] rounded-2xl p-5 border border-white/10 text-white">
+            <div class="flex items-center justify-between pb-4 border-b border-white/10">
+              <div>
+                <span class="text-xs text-slate-400">Painel do Lojista</span>
+                <h4 class="text-lg font-bold text-white">Pluga Flow Control Center</h4>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-[#00e676] text-xs font-bold">
+                Conectado ao WhatsApp
+              </span>
+            </div>
+
+            <!-- Cards de Métricas do Dia -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-5">
+              <div class="bg-[#091a35] p-4 rounded-xl border border-white/5">
+                <div class="text-xs text-slate-400">Pedidos Hoje</div>
+                <div class="text-2xl font-black text-[#00e676] mt-1">28</div>
+                <div class="text-[11px] text-emerald-400 mt-0.5">+14% que ontem</div>
+              </div>
+
+              <div class="bg-[#091a35] p-4 rounded-xl border border-white/5">
+                <div class="text-xs text-slate-400">Faturamento do Dia</div>
+                <div class="text-2xl font-black text-white mt-1">R$ 1.480,00</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Sem comissões descontadas</div>
+              </div>
+
+              <div class="bg-[#091a35] p-4 rounded-xl border border-white/5">
+                <div class="text-xs text-slate-400">Membros do Clube</div>
+                <div class="text-2xl font-black text-amber-400 mt-1">142</div>
+                <div class="text-[11px] text-slate-400 mt-0.5">Clientes recorrentes</div>
+              </div>
+            </div>
+
+            <!-- Lista de Pedidos em Tempo Real -->
+            <div class="mt-6">
+              <h5 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3">Últimos Pedidos em Preparo</h5>
+              <div class="space-y-2">
+                <div class="bg-[#091a35] p-3 rounded-xl flex items-center justify-between text-xs border border-white/5">
+                  <div class="flex items-center gap-3">
+                    <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
+                    <span class="font-bold text-white">#1082 - Rodrigo M.</span>
+                    <span class="text-slate-400">1x Açaí Max Família + Leite Ninho</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="font-bold text-[#00e676]">R$ 40,00</span>
+                    <span class="px-2 py-0.5 rounded bg-sky-900/60 text-sky-300 text-[10px]">Em Produção</span>
+                  </div>
+                </div>
+
+                <div class="bg-[#091a35] p-3 rounded-xl flex items-center justify-between text-xs border border-white/5">
+                  <div class="flex items-center gap-3">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+                    <span class="font-bold text-white">#1081 - Camila S.</span>
+                    <span class="text-slate-400">2x Açaí 500ml + Morango</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="font-bold text-[#00e676]">R$ 44,00</span>
+                    <span class="px-2 py-0.5 rounded bg-emerald-900/60 text-emerald-300 text-[10px]">Saiu p/ Entrega</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Rodapé do Modal com CTA -->
+      <div class="p-4 bg-[#07152b] border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
+        <span class="text-xs text-slate-300">Quer ter essa mesma tecnologia rodando no seu negócio?</span>
+        <a href="https://wa.me/5521987000079?text=Ol%C3%A1%20SxConnect!%20Vi%20a%20demonstra%C3%A7%C3%A3o%20do%20Pluga%20Flow%20e%20gostaria%20de%20implantar%20por%20R$%20300!" target="_blank" rel="noopener noreferrer" class="btn-pluga-neon px-5 py-2.5 rounded-xl text-xs font-bold text-slate-950">
+          Implantar Agora por R$ 300
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================
+       BOTÃO FLUTUANTE DO WHATSAPP (SXCONNECT OFICIAL)
+       ======================================================== -->
+  <a href="https://wa.me/5521987000079?text=Ol%C3%A1%20SxConnect!%20Gostaria%20de%20iniciar%20a%20implanta%C3%A7%C3%A3o%20do%20Pluga%20Flow%20para%20minha%20loja!" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-[#00e676] text-slate-950 flex items-center justify-center shadow-2xl hover:scale-110 transition-transform pulse-neon" title="Falar com a SxConnect no WhatsApp">
+    <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm.01 16.74c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 012.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1 1.13-.17 1.47-.7 1.7-.97.23-.27.23-.51.16-.63-.07-.12-.22-.19-.47-.31z"/>
+    </svg>
+  </a>
+
+  <!-- Script Principal -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

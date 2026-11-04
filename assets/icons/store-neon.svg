@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="neonStoreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d2ff"/>
+      <stop offset="100%" stop-color="#00e676"/>
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <!-- Fachada e telhado em estilo neon idêntico à imagem -->
+  <path d="M12 28L18 16H46L52 28" stroke="url(#neonStoreGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#neonGlow)"/>
+  <!-- Paredes da loja -->
+  <path d="M16 28V48H48V28" stroke="url(#neonStoreGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#neonGlow)"/>
+  <!-- Ondas do toldo -->
+  <path d="M12 28C14.5 31 18 31 20 28C22.5 31 26 31 28 28C30.5 31 34 31 36 28C38.5 31 42 31 44 28C46.5 31 50 31 52 28" stroke="url(#neonStoreGrad)" stroke-width="3" stroke-linecap="round" filter="url(#neonGlow)"/>
+  <!-- Círculo com Checkmark verde fluorescente neon -->
+  <circle cx="44" cy="44" r="11" fill="#08182b" stroke="#00e676" stroke-width="3" filter="url(#neonGlow)"/>
+  <path d="M39 44L42.5 47.5L49 41" stroke="#00e676" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#neonGlow)"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="userGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#00d2ff"/>
+    </linearGradient>
+    <linearGradient id="userGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e676"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <!-- Pessoa Esquerda -->
+  <circle cx="19" cy="25" r="7" fill="url(#userGrad1)"/>
+  <path d="M9 49C9 42 13 38 19 38C22 38 25 39 27 41" stroke="#0284c7" stroke-width="3" stroke-linecap="round"/>
+  <!-- Pessoa Direita -->
+  <circle cx="45" cy="25" r="7" fill="url(#userGrad1)"/>
+  <path d="M55 49C55 42 51 38 45 38C42 38 39 39 37 41" stroke="#0284c7" stroke-width="3" stroke-linecap="round"/>
+  <!-- Pessoa Central (Destaque VIP) -->
+  <circle cx="32" cy="21" r="9" fill="url(#userGrad2)"/>
+  <path d="M19 50C19 42 24 36 32 36C40 36 45 42 45 50" fill="url(#userGrad2)"/>
+  <!-- Estrela de Fidelidade / Benefício -->
+  <path d="M32 7L34 11L38 11.5L35 14.5L36 19L32 16.5L28 19L29 14.5L26 11.5L30 11L32 7Z" fill="#ffb703"/>
+</svg>

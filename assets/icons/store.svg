@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="storeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#00d2ff"/>
+    </linearGradient>
+    <linearGradient id="awningGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <!-- Base da Loja -->
+  <rect x="12" y="26" width="40" height="28" rx="4" fill="#f0f9ff" stroke="url(#storeGrad)" stroke-width="2.5"/>
+  <!-- Porta de entrada -->
+  <rect x="26" y="36" width="12" height="18" rx="2" fill="#e0f2fe" stroke="url(#storeGrad)" stroke-width="2"/>
+  <!-- Janela vitrine -->
+  <rect x="16" y="36" width="7" height="10" rx="1.5" fill="#bae6fd" stroke="url(#storeGrad)" stroke-width="1.5"/>
+  <rect x="41" y="36" width="7" height="10" rx="1.5" fill="#bae6fd" stroke="url(#storeGrad)" stroke-width="1.5"/>
+  <!-- Toldo listrado -->
+  <path d="M8 26L14 14H50L56 26H8Z" fill="url(#awningGrad)" stroke="#0369a1" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Listras do toldo -->
+  <path d="M14 14L16 26" stroke="#ffffff" stroke-width="2"/>
+  <path d="M26 14L26 26" stroke="#ffffff" stroke-width="2"/>
+  <path d="M38 14L38 26" stroke="#ffffff" stroke-width="2"/>
+  <path d="M48 14L46 26" stroke="#ffffff" stroke-width="2"/>
+  <!-- Babado ondulado do toldo -->
+  <path d="M8 26C10 28.5 14 28.5 16 26C18 28.5 22 28.5 24 26C26 28.5 30 28.5 32 26C34 28.5 38 28.5 40 26C42 28.5 46 28.5 48 26C50 28.5 54 28.5 56 26" fill="#0284c7"/>
+  <!-- Símbolo www / domínio na fachada -->
+  <circle cx="32" cy="10" r="3.5" fill="#00e676"/>
+</svg>

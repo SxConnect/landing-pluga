@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 64" fill="none">
+  <!-- Tipografia característica Polpe's em vinho/açaí elegante com sombra -->
+  <text x="100" y="45" font-family="'Brush Script MT', 'Dancing Script', 'Pacifico', cursive, sans-serif" font-size="44" font-weight="bold" fill="#701a75" text-anchor="middle" font-style="italic">Polpe's</text>
+  <path d="M40 50 Q100 56 160 50" stroke="#a21caf" stroke-width="2" stroke-linecap="round" fill="none"/>
+</svg>

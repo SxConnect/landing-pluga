@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="helmetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#00d2ff"/>
+    </linearGradient>
+  </defs>
+  <!-- Capacete do entregador -->
+  <path d="M18 29C18 19 24 13 32 13C40 13 46 19 46 29C46 32 44 34 42 34H22C20 34 18 32 18 29Z" fill="url(#helmetGrad)" stroke="#0369a1" stroke-width="2.5"/>
+  <!-- Viseira escura do capacete -->
+  <path d="M22 28C22 24 25 22 32 22C39 22 42 24 42 28C42 30 40 31 38 31H26C24 31 22 30 22 28Z" fill="#0f172a"/>
+  <path d="M26 24C29 23 35 23 38 24" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Cabeça / queixo e correia -->
+  <path d="M28 34V37C28 39 30 41 32 41C34 41 36 39 36 37V34" stroke="#64748b" stroke-width="2"/>
+  <!-- Ombros e Jaqueta de entrega -->
+  <path d="M16 53C16 46 23 43 32 43C41 43 48 46 48 53" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5"/>
+  <!-- Zíper / detalhe verde fluorescente de segurança -->
+  <line x1="32" y1="43" x2="32" y2="53" stroke="#00e676" stroke-width="2.5"/>
+</svg>

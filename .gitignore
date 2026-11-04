@@ -1,0 +1,17 @@
+# Dependências e Logs
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# SO e IDEs
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Build e Temporários
+dist/
+build/
+.cache/

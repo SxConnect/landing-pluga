@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="scooterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e676"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <!-- Roda traseira -->
+  <circle cx="16" cy="45" r="9" stroke="#0f172a" stroke-width="3" fill="#e2e8f0"/>
+  <circle cx="16" cy="45" r="3.5" fill="#00e676"/>
+  <!-- Roda dianteira -->
+  <circle cx="48" cy="45" r="9" stroke="#0f172a" stroke-width="3" fill="#e2e8f0"/>
+  <circle cx="48" cy="45" r="3.5" fill="#00e676"/>
+  <!-- Chassi e carenagem -->
+  <path d="M16 45H28L36 33H44" stroke="url(#scooterGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Guidão -->
+  <path d="M42 33L44 21L40 21" stroke="#0f172a" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="45" cy="22" r="3" fill="#00d2ff"/>
+  <!-- Assento -->
+  <path d="M22 34H32" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+  <!-- Baú de entrega nas costas -->
+  <rect x="11" y="22" width="13" height="13" rx="3" fill="#00e676" stroke="#059669" stroke-width="2"/>
+  <line x1="11" y1="28" x2="24" y2="28" stroke="#ffffff" stroke-width="2"/>
+  <!-- Linhas de velocidade de entrega -->
+  <path d="M4 27H8" stroke="#00e676" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M2 33H6" stroke="#00d2ff" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

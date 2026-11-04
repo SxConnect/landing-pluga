@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" fill="none">
+  <defs>
+    <linearGradient id="logoPlugGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00d2ff"/>
+      <stop offset="100%" stop-color="#00e676"/>
+    </linearGradient>
+    <filter id="logoGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <!-- Ícone do Plug estilizado idêntico ao da imagem -->
+  <g transform="translate(6, 4) scale(1.15)">
+    <!-- Pinos do plugue -->
+    <path d="M12 11L17 6" stroke="url(#logoPlugGrad)" stroke-width="3" stroke-linecap="round" filter="url(#logoGlow)"/>
+    <path d="M19 18L24 13" stroke="url(#logoPlugGrad)" stroke-width="3" stroke-linecap="round" filter="url(#logoGlow)"/>
+    <!-- Corpo do plugue -->
+    <rect x="13" y="13" width="16" height="12" rx="5" transform="rotate(-45 21 19)" stroke="url(#logoPlugGrad)" stroke-width="2.6" fill="#08182b"/>
+    <!-- Cabo elétrico com curva estilizada -->
+    <path d="M26 24C30 28 35 30 36 33C37 36 35 38 32 39C29 40 25 37 22 34" stroke="url(#logoPlugGrad)" stroke-width="2.6" stroke-linecap="round"/>
+  </g>
+  <!-- Texto Pluga -->
+  <text x="64" y="38" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#ffffff" letter-spacing="-0.5">Pluga</text>
+  <!-- Texto FLOW -->
+  <text x="162" y="48" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#00e676" letter-spacing="2.5">FLOW</text>
+</svg>

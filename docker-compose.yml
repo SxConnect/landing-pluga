@@ -1,0 +1,16 @@
+services:
+  pluga-landing:
+    build: .
+    container_name: pluga-flow-site
+    restart: unless-stopped
+    ports:
+      - "8085:80"
+    environment:
+      - VIRTUAL_HOST=pluga.xpanel.com.br
+      - LETSENCRYPT_HOST=pluga.xpanel.com.br
+    networks:
+      - default
+
+networks:
+  default:
+    name: pluga-network

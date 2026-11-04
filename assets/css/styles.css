@@ -1,0 +1,164 @@
+/* ==========================================================================
+   PLUGA FLOW - IDENTIDADE VISUAL OFICIAL & DESIGN SYSTEM
+   Subdomínio Alvo: pluga.xpanel.com.br
+   ========================================================================== */
+
+:root {
+  --pluga-neon: #00e676;
+  --pluga-neon-hover: #0df27c;
+  --pluga-neon-glow: rgba(0, 230, 118, 0.35);
+  --pluga-cyan: #00d2ff;
+  --pluga-cyan-glow: rgba(0, 210, 255, 0.35);
+  --pluga-dark: #07152b;
+  --pluga-dark-surface: #0a1c38;
+  --pluga-dark-deep: #040c18;
+  --pluga-text-muted: #94a3b8;
+  --pluga-border-glow: rgba(0, 230, 118, 0.25);
+}
+
+/* Tipografia e Base */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #1e293b;
+  background-color: #ffffff;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+/* Backgrounds com gradiente neon da marca */
+.bg-pluga-hero {
+  background: radial-gradient(circle at 75% 30%, rgba(0, 210, 255, 0.18) 0%, rgba(7, 21, 43, 0) 60%),
+              radial-gradient(circle at 20% 70%, rgba(0, 230, 118, 0.15) 0%, rgba(7, 21, 43, 0) 50%),
+              linear-gradient(135deg, #07152b 0%, #0a1f3d 100%);
+}
+
+.bg-pluga-dark-card {
+  background: linear-gradient(145deg, #091a35 0%, #051020 100%);
+  border: 1px solid rgba(0, 210, 255, 0.15);
+}
+
+.bg-pluga-pricing {
+  background: radial-gradient(circle at 50% 50%, rgba(0, 230, 118, 0.08) 0%, rgba(7, 21, 43, 0) 70%),
+              linear-gradient(180deg, #061429 0%, #040c19 100%);
+  border: 1px solid rgba(0, 230, 118, 0.2);
+}
+
+/* Efeitos Neon e Glow */
+.btn-pluga-neon {
+  background: #00e676;
+  color: #051424;
+  font-weight: 700;
+  box-shadow: 0 4px 20px var(--pluga-neon-glow);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-pluga-neon:hover {
+  background: #0df27c;
+  box-shadow: 0 6px 28px rgba(0, 230, 118, 0.55);
+  transform: translateY(-2px);
+}
+
+.btn-pluga-outline {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+}
+
+.btn-pluga-outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.glow-neon-text {
+  text-shadow: 0 0 20px rgba(0, 230, 118, 0.4);
+}
+
+.glow-cyan-text {
+  text-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
+}
+
+/* Cards com hover dinâmico */
+.feature-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid #f1f5f9;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 210, 255, 0.4);
+  box-shadow: 0 20px 30px -10px rgba(2, 132, 199, 0.08);
+}
+
+/* Animação Floating para celulares e plugs */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.5deg);
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Pulso sutil no botão flutuante */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(0, 230, 118, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(0, 230, 118, 0);
+  }
+}
+
+.pulse-neon {
+  animation: pulseGlow 2.5s infinite;
+}
+
+/* FAQ Accordion Styling */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  opacity: 0;
+}
+
+.faq-item.active .faq-content {
+  max-height: 400px;
+  opacity: 1;
+}
+
+.faq-item.active .faq-chevron {
+  transform: rotate(180deg);
+  color: #00e676;
+}
+
+/* Demonstração Interativa Tabs & Mockup Frame */
+.tab-btn.active {
+  background-color: #00e676;
+  color: #061426;
+  font-weight: 700;
+}
+
+.phone-mockup-frame {
+  border: 10px solid #1e293b;
+  border-radius: 40px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
+}
+
+/* Responsividade de tabelas e grids */
+@media (max-width: 768px) {
+  .hero-person-wrapper {
+    margin-top: 1.5rem;
+  }
+}
