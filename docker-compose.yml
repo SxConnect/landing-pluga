@@ -13,7 +13,7 @@ services:
       - LETSENCRYPT_EMAIL=silvanoxavierpro@gmail.com
     labels:
       - "traefik.enable=true"
-      - "traefik.docker.network=xpanel-net"
+      - "traefik.docker.network=portainer_default"
       - "traefik.http.routers.pluga.rule=Host(`pluga.xpanel.com.br`)"
       - "traefik.http.routers.pluga.entrypoints=web,websecure"
       - "traefik.http.services.pluga.loadbalancer.server.port=80"
@@ -23,13 +23,13 @@ services:
         condition: on-failure
       labels:
         - "traefik.enable=true"
-        - "traefik.docker.network=xpanel-net"
+        - "traefik.docker.network=portainer_default"
         - "traefik.http.routers.pluga.rule=Host(`pluga.xpanel.com.br`)"
         - "traefik.http.routers.pluga.entrypoints=web,websecure"
         - "traefik.http.services.pluga.loadbalancer.server.port=80"
     networks:
-      - xpanel-net
+      - portainer_default
 
 networks:
-  xpanel-net:
+  portainer_default:
     external: true
