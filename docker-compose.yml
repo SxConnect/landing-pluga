@@ -6,6 +6,15 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=portainer_default"
+
+      # 1. Roteador HTTP (Porta 80) -> Redirecionamento Automático para HTTPS
+      - "traefik.http.routers.pluga-http.rule=Host(`pluga.xpanel.com.br`)"
+      - "traefik.http.routers.pluga-http.entrypoints=web"
+      - "traefik.http.routers.pluga-http.middlewares=pluga-redirect"
+      - "traefik.http.middlewares.pluga-redirect.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.pluga-redirect.redirectscheme.permanent=true"
+
+      # 2. Roteador HTTPS (Porta 443 com Certificado SSL Oficial)
       - "traefik.http.routers.pluga.rule=Host(`pluga.xpanel.com.br`)"
       - "traefik.http.routers.pluga.entrypoints=websecure"
       - "traefik.http.routers.pluga.service=pluga"
