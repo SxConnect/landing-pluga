@@ -1,47 +1,16 @@
-version: '3.8'
-
 services:
   landing-pluga:
     image: ghcr.io/sxconnect/landing-pluga:latest
     container_name: landing-pluga
-    restart: unless-stopped
-    ports:
-      - "8085:80"
-    environment:
-      - VIRTUAL_HOST=pluga.xpanel.com.br
-      - LETSENCRYPT_HOST=pluga.xpanel.com.br
-      - LETSENCRYPT_EMAIL=silvanoxavierpro@gmail.com
+    restart: always
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=portainer_default"
-      - "traefik.http.routers.pluga-http.rule=Host(`pluga.xpanel.com.br`)"
-      - "traefik.http.routers.pluga-http.entrypoints=web"
-      - "traefik.http.routers.pluga-http.service=pluga-svc"
-      - "traefik.http.routers.pluga-https.rule=Host(`pluga.xpanel.com.br`)"
-      - "traefik.http.routers.pluga-https.entrypoints=websecure"
-      - "traefik.http.routers.pluga-https.tls=true"
-      - "traefik.http.routers.pluga-https.tls.certresolver=letsencryptresolver"
-      - "traefik.http.routers.pluga-https.service=pluga-svc"
-      - "traefik.http.services.pluga-svc.loadbalancer.server.port=80"
-    deploy:
-      replicas: 1
-      restart_policy:
-        condition: on-failure
-      placement:
-        constraints:
-          - node.role == manager
-      labels:
-        - "traefik.enable=true"
-        - "traefik.docker.network=portainer_default"
-        - "traefik.http.routers.pluga-http.rule=Host(`pluga.xpanel.com.br`)"
-        - "traefik.http.routers.pluga-http.entrypoints=web"
-        - "traefik.http.routers.pluga-http.service=pluga-svc"
-        - "traefik.http.routers.pluga-https.rule=Host(`pluga.xpanel.com.br`)"
-        - "traefik.http.routers.pluga-https.entrypoints=websecure"
-        - "traefik.http.routers.pluga-https.tls=true"
-        - "traefik.http.routers.pluga-https.tls.certresolver=letsencryptresolver"
-        - "traefik.http.routers.pluga-https.service=pluga-svc"
-        - "traefik.http.services.pluga-svc.loadbalancer.server.port=80"
+      - "traefik.http.routers.pluga.rule=Host(`pluga.xpanel.com.br`)"
+      - "traefik.http.routers.pluga.entrypoints=websecure"
+      - "traefik.http.routers.pluga.service=pluga"
+      - "traefik.http.services.pluga.loadbalancer.server.port=80"
+      - "traefik.http.routers.pluga.tls.certresolver=leresolver"
     networks:
       - portainer_default
 
